@@ -61,7 +61,7 @@
 
 /* ----------Feature--------- */
 .feature {
-    background: url("./assets/images/feature.png") no-repeat right / contain;
+    background: url("../images/feature.png") no-repeat right / contain;
     height: 100%;
     min-height: 682px;
     display: grid;
