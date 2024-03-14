@@ -1,0 +1,145 @@
+:root {
+    --text-color: #252B42;
+    --second-text-color: #737373;
+    --light-text-color: #FFFFFF;
+    --primary-color: #96BB7C;
+    --danger-color: #E74040;
+    --bg-color: #FFF2F3;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.typo--btnText {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+
+.typo--h1 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+}
+
+.typo--h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+
+.typo--h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.typo--h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.typo--h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.typo--h6 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.typo--p1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.typo--p2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    color: var(--light-text-color);
+    background-color: var(--primary-color);
+    border: none;
+    padding: 15px 25px;
+    gap: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn--second {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-tertiary {
+    color: var(--primary-color);
+    gap: 10px;
+}
