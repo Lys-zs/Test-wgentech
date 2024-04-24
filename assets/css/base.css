@@ -1,14 +1,18 @@
 :root {
-    --text-color: #252B42;
-    --second-text-color: #737373;
-    --light-text-color: #FFFFFF;
-    --primary-color: #96BB7C;
-    --danger-color: #E74040;
-    --bg-color: #FFF2F3;
+    --second-color: #FFFFFF;
+    --primary-color: #000000;
+    --tetari-color: #A04B21;
+    --bg-color: #E6DBD5;
+    --border-color: #EDEDED;
+    --textOld-color: #666666;
+    --bg-color-green: #C4CAB5;
+    --bg-color-origin: #DEB49F;
+    --bg-circle: #FFFEDE;
+    --bg-svg: #E9E9E9;
 }
 
-html {
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: "Poppins", serif;
 }
 
 *,
@@ -21,6 +25,7 @@ html {
 img {
     display: block;
     max-width: 100%;
+    width: 100%;
 }
 
 a {
@@ -34,8 +39,7 @@ a {
 }
 
 .container {
-    max-width: 1080px;
-    padding: 0 15px;
+    max-width: 1340px;
     margin: 0 auto;
 }
 
@@ -47,60 +51,40 @@ a {
 }
 
 .typo--h1 {
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 80px;
-    letter-spacing: 0.2px;
+    font-family: Libre Baskerville;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 74.4px;
 }
 
 .typo--h2 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.2px;
-}
-
-.typo--h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-}
-
-.typo--h4 {
+    font-family: Libre Baskerville;
+    font-size: 42px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.2px;
-}
-
-.typo--h5 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
+    line-height: 52px;
 }
 
 .typo--h6 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 .typo--p1 {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.typo--p2 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
 }
 
-.typo--p2 {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
-    text-align: center;
+.typo--p3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 .grid {
@@ -122,24 +106,68 @@ a {
     justify-content: center;
 }
 
-.btn {
-    color: var(--light-text-color);
-    background-color: var(--primary-color);
-    border: none;
-    padding: 15px 25px;
-    gap: 15px;
-    border-radius: 5px;
+button {
+    transition: all .3s ease;
     cursor: pointer;
 }
 
-.btn--second {
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    background-color: transparent;
+.btn-primary {
+    font-family: 'Poppins';
+    padding: 12px 40px;
+    border: none;
+    border-radius: 60px;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    margin-top: 40px;
+}
+
+.btn-primary:hover {
+    background-color: var(--second-color);
     color: var(--primary-color);
 }
 
-.btn-tertiary {
+.btn-second {
+    font-family: 'Poppins';
+    padding: 6px 10px;
+    border-radius: 32px;
+    background-color: var(--second-color);
     color: var(--primary-color);
-    gap: 10px;
+    border: none;
+}
+
+.btn-second:hover {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+}
+
+.btn-tertiary {
+    position:absolute;
+    z-index: 1; 
+    left: 30px;
+    right: 30px;
+    bottom: 28px;
+    padding: 18px 24px;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Libre Baskerville;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-tertiary:hover {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+}
+
+.btn-tertiary:hover path {
+    stroke: var(--second-color);
 }
